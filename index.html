@@ -9,9 +9,9 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            position: relative; /* Set position to relative for overlay positioning */
-            overflow: hidden; /* Prevent scrolling caused by absolute positioning */
-            background-color: #000000; /* Set background color to black */
+            position: relative;
+            overflow: hidden;
+            background-color: #000000;
         }
 
         /* Background Image */
@@ -21,34 +21,34 @@
             top: 0;
             left: 0;
             right: 0;
-            height: 250px; /* Adjust height to limit background image */
-            background-image: url('track.png'); /* Path to your background image */
-            background-size: cover; /* Make sure the image covers the entire background */
-            background-position: top; /* Center the background image */
-            filter: brightness(0.5); /* Dim the image for better text visibility */
-            z-index: -1; /* Place it behind other content */
+            height: 250px;
+            background-image: url('/images/track.png');
+            background-size: cover;
+            background-position: top;
+            filter: brightness(0.5);
+            z-index: -1;
         }
 
         /* Header styles */
         .header {
-            background-color: #000000; /* Set header background color */
+            background-color: #000000;
             display: flex;
-            justify-content: space-between; /* Space between logo and navigation */
+            justify-content: space-between;
             align-items: center;
             padding: 15px 30px;
         }
         
         .header .logo {
-            font-size: 36px; /* Increased font size for logo */
-            font-weight: bold; /* Make the font bold */
+            font-size: 36px;
+            font-weight: bold;
         }
         
         .header .logo .robust {
-            color: #b92018; /* Set color for 'Robust' */
+            color: #b92018;
         }
         
         .header .logo .sports-clinic {
-            color: #ffffff; /* Set color for 'Sports Clinic' */
+            color: #ffffff;
         }
 
         .header .nav {
@@ -72,12 +72,12 @@
         /* Body styles */
         .content {
             display: flex;
-            flex-direction: column; /* Stack content vertically */
-            align-items: flex-start; /* Align items to the left */
+            flex-direction: column;
+            align-items: flex-start;
             padding: 50px 30px;
-            color: #ffffff; /* Change text color to white */
-            position: relative; /* Relative position for content */
-            z-index: 1; /* Place content above the background */
+            color: #ffffff;
+            position: relative;
+            z-index: 1;
         }
         
         .text-content {
@@ -91,121 +91,122 @@
         }
         
         .main-text .physiotherapy {
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Shadow for 'physiotherapy' */
-            color: #ffffff; /* Optional: Keep the color consistent */
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            color: #ffffff;
         }
         
         .sub-text {
             font-size: 16px;
-            color: rgb(255, 255, 255); /* White color for sub-text */
+            color: rgb(255, 255, 255);
             margin-top: 20px;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Shadow for sub-text */
-            margin-bottom: 0; /* Remove space below sub-text */
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            margin-bottom: 0;
         }
 
         /* About Us and Services styles */
         .section {
-            text-align: center; /* Center text for sections */
-            margin: 50px 0; /* Space above and below sections */
+            text-align: center;
+            margin: 50px 0;
         }
 
         .section h2 {
-            font-size: 36px; /* Heading font size */
-            color: #ffffff; /* Heading color */
-            position: relative; /* Relative positioning for underline */
-            display: inline-block; /* Make it inline for underline */
-            margin-bottom: 10px; /* Space below heading */
+            font-size: 36px;
+            color: #ffffff;
+            position: relative;
+            display: inline-block;
+            margin-bottom: 10px;
         }
 
         .section h2::after {
-            content: ''; /* Create a pseudo-element for the underline */
+            content: '';
             display: block;
-            width: 50px; /* Underline width */
-            height: 3px; /* Underline height */
-            background-color: #b92018; /* Underline color */
-            margin: 0 auto; /* Center underline */
-            margin-top: 5px; /* Space above underline */
+            width: 50px;
+            height: 3px;
+            background-color: #b92018;
+            margin: 0 auto;
+            margin-top: 5px;
         }
 
         .section p {
-            color: #ffffff; /* Text color for paragraph */
-            max-width: 600px; /* Max width for paragraph */
-            margin: 0 auto; /* Center paragraph */
-            font-size: 18px; /* Font size for paragraph */
+            color: #ffffff;
+            max-width: 600px;
+            margin: 0 auto;
+            font-size: 18px;
         }
 
         .services-container {
-            display: flex; /* Use flexbox to create a two-column layout */
-            justify-content: center; /* Center the columns */
-            margin-top: 20px; /* Space above services list */
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
         }
 
         .services-column {
-            margin: 0 20px; /* Space between columns */
-            text-align: left; /* Align text to the left */
+            margin: 0 20px;
+            text-align: left;
         }
 
         .services-list {
-            list-style-type: none; /* Remove bullet points */
-            padding: 0; /* Remove padding */
-            margin-top: 20px; /* Space above services list */
+            list-style-type: none;
+            padding: 0;
+            margin-top: 20px;
         }
 
         .services-list li {
-            font-size: 20px; /* Font size for services */
-            color: #ffffff; /* Text color for services */
-            margin: 10px 0; /* Space between services */
-            display: flex; /* Use flexbox to align icons with text */
-            align-items: center; /* Center align items */
-            transition: transform 0.3s; /* Smooth transition for scale effect */
-            position: relative; /* Position relative for the info box */
-            padding: 10px; /* Add padding to list items */
-            border-radius: 5px; /* Rounded corners */
-            cursor: pointer; /* Change cursor to pointer */
+            font-size: 20px;
+            color: #ffffff;
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+            transition: transform 0.3s;
+            position: relative;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
         }
 
         .services-list li:hover {
-            transform: scale(1.1); /* Scale effect on hover */
-            background-color: rgba(185, 32, 24, 0.1); /* Light background on hover */
+            transform: scale(1.1);
+            background-color: rgba(185, 32, 24, 0.1);
         }
 
         .services-list li i {
-            margin-right: 10px; /* Space between icon and text */
-            color: #b92018; /* Color for icons */
+            margin-right: 10px;
+            color: #b92018;
         }
 
         /* Info box styles */
         .info-box {
-            display: none; /* Hide info box by default */
-            position: absolute; /* Position absolutely */
-            left: 50%; /* Center horizontally */
-            transform: translateX(-50%); /* Center the box */
-            bottom: 120%; /* Position above the service item */
-            background-color: #b92018; /* Background color of info box */
-            color: #ffffff; /* Text color */
-            padding: 10px 15px; /* Padding */
-            border-radius: 5px; /* Rounded corners */
-            z-index: 10; /* Make sure it appears above other elements */
-            white-space: nowrap; /* Prevent text wrapping */
+            display: none;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 120%;
+            background-color: #b92018;
+            color: #ffffff;
+            padding: 10px 15px;
+            border-radius: 5px;
+            z-index: 10;
+            white-space: nowrap;
         }
 
         .services-list li:hover .info-box {
-            display: block; /* Show info box on hover */
+            display: block;
         }
     </style>
 </head>
 <body>
-
+    <a href="index.html">Home</a>
+    <a href="Team.html">Team</a>
     <!-- Header section -->
     <header class="header">
         <div class="logo">
             <span class="robust">Robust</span> 
-            <span class="sports-clinic"> Sports Clinic</span> <!-- Changed color for Sports Clinic -->
+            <span class="sports-clinic"> Sports Clinic</span>
         </div>
         <nav class="nav">
             <a href="#">Home</a>
             <a href="#">Team</a>
-            <a href="https://wa.me/+918595009367" target="_blank">Contact Us</a> <!-- WhatsApp link -->
+            <a href="https://wa.me/+918595009367" target="_blank">Contact Us</a>
         </nav>
     </header>
 
@@ -213,7 +214,7 @@
     <section class="content">
         <div class="text-content">
             <div class="main-text">
-                <span class="physiotherapy">Physical Therapy and Performance </span><br>
+                <span class="physiotherapy">Physical Therapy and Performance</span><br>
             </div>
             <div class="sub-text">
                 Unlock your true sporting potential with our dynamic training<br> 
@@ -225,7 +226,7 @@
     <!-- About Us Section -->
     <section class="section">
         <h2>About Us</h2>
-        <p>Our team of sports science experts offer the most comprehensive training and rehabilitation programs based on individualised assessments. With a highly qualified team of experts, we take the professional sports approach to train and recover.</p>
+        <p>Our team of sports science experts offer the most comprehensive training and rehabilitation programs based on individualized assessments. With a highly qualified team of experts, we take the professional sports approach to train and recover.</p>
     </section>
 
     <!-- Services Section -->
@@ -235,40 +236,40 @@
             <div class="services-column">
                 <ul class="services-list">
                     <li>
-                        <i class="fas fa-dumbbell"></i>Fitness Assessments
+                        <i class="fas fa-dumbbell"></i>Fitness Assessment
                         <span class="info-box">Individualized fitness evaluations.</span>
                     </li>
                     <li>
-                        <i class="fas fa-user-injured"></i>Injury Rehabilitation
-                        <span class="info-box">Tailored recovery programs for injuries.</span>
+                        <i class="fas fa-id-badge"></i>Athlete Profiling
+                        <span class="info-box">Detailed athlete profiles for performance enhancement.</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-chart-line"></i>Performance Assessment
+                        <span class="info-box">Comprehensive evaluation of athletic performance.</span>
                     </li>
                     <li>
                         <i class="fas fa-user-check"></i>Injury Screening
                         <span class="info-box">Early detection of potential injuries.</span>
-                    </li>
-                    <li>
-                        <i class="fas fa-basketball-ball"></i>Sports Performance Training
-                        <span class="info-box">Enhancing athlete performance through targeted training.</span>
                     </li>
                 </ul>
             </div>
             <div class="services-column">
                 <ul class="services-list">
                     <li>
-                        <i class="fas fa-heartbeat"></i>Wellness Programs
-                        <span class="info-box">Holistic approach to wellness.</span>
+                        <i class="fas fa-briefcase-medical"></i>On-site Physical Therapy
+                        <span class="info-box">Personalized physical therapy at your convenience.</span>
                     </li>
                     <li>
-                        <i class="fas fa-stethoscope"></i>Physiotherapy
-                        <span class="info-box">Rehabilitation and physical recovery.</span>
-                    </li>
-                    <li>
-                        <i class="fas fa-futbol"></i>Sport Specific Training
-                        <span class="info-box">Training programs designed for specific sports.</span>
-                    </li>
-                    <li>
-                        <i class="fas fa-fist-raised"></i>Strength and Conditioning
+                        <i class="fas fa-fist-raised"></i>Strength & Conditioning
                         <span class="info-box">Building strength and endurance for sports.</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-laptop"></i>Virtual Training Programs
+                        <span class="info-box">Online training programs tailored to your needs.</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-apple-alt"></i>Nutrition Counselling
+                        <span class="info-box">Expert guidance on sports nutrition and diet.</span>
                     </li>
                 </ul>
             </div>
