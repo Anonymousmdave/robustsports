@@ -10,7 +10,7 @@
             margin: 0;
             font-family: Arial, sans-serif;
             position: relative;
-            overflow: hidden;
+            overflow-x: hidden; /* Prevent horizontal scroll */
             background-color: #000000;
         }
 
@@ -22,10 +22,10 @@
             left: 0;
             right: 0;
             height: 250px;
-            background-image: url('/images/track.png');
+            background-image: url('track.png');
             background-size: cover;
             background-position: top;
-            filter: brightness(0.5);
+            filter: brightness(1);
             z-index: -1;
         }
 
@@ -107,6 +107,7 @@
         .section {
             text-align: center;
             margin: 50px 0;
+            min-height: 200px; /* Ensure sections have a minimum height */
         }
 
         .section h2 {
@@ -192,6 +193,31 @@
         .services-list li:hover .info-box {
             display: block;
         }
+
+        /* Contact section styles */
+        .contact-section {
+            margin: 50px 0;
+            text-align: center;
+            color: #ffffff;
+        }
+
+        .contact-section a {
+            color: #b92018; /* Default color */
+            text-decoration: underline;
+            transition: color 0.3s; /* Transition for color change */
+        }
+
+        .contact-section a:hover {
+            color: red; /* Color on hover */
+        }
+
+        /* New content section */
+        .additional-content {
+            padding: 50px 30px;
+            color: #ffffff;
+            text-align: center;
+            margin: 50px 0;
+        }
     </style>
 </head>
 <body>
@@ -272,6 +298,16 @@
                 </ul>
             </div>
         </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <p>Let’s team up at: <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=jrjtXLFHLNjqJhNknCXhMhJkCmWcFwqfDvXfCXVGzDvrjWncqJNDscPnkzhDVjBvKJRvwQzg" target="_blank"><u>robustsportsclinic@gmail.com</u></a></p>
+    </section>
+
+    <!-- Additional Content Section -->
+    <section class="additional-content">
+        <p>More content coming soon...</p>
     </section>
 
 </body>
