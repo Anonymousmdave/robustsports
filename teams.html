@@ -125,6 +125,25 @@
                 transform: scale(1.1);
             }
         }
+
+        /* Animation for the growth message */
+        .growth-message {
+            font-size: 20px;
+            color: #b92018;
+            margin-top: 40px;
+            text-align: center;
+            animation: scaleUpDown 1.5s infinite; /* Animation for scaling */
+        }
+
+        /* Keyframes for scaling animation */
+        @keyframes scaleUpDown {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+        }
     </style>
 </head>
 <body>
@@ -166,6 +185,11 @@
             </li>
             <p>Our internationally certified fitness experts work with people of all ages and skill levels to ensure that the clients follow their programs safely and effectively.</p>
         </ul>
+
+        <!-- New growth message -->
+        <p class="growth-message">
+            We're growing! Stay tuned for more content and services coming your way soon.
+        </p>
     </section>
 
 </body>
