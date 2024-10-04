@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robust Sports Clinic</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome CDN -->
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            position: relative;
+            background-color: #000000;
+        }
+
+        /* Header styles */
+        .header {
+            background-color: #000000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+        }
+        
+        .header .logo {
+            font-size: 36px;
+            font-weight: bold;
+        }
+        
+        .header .logo .robust {
+            color: #b92018;
+        }
+        
+        .header .logo .sports-clinic {
+            color: #ffffff;
+        }
+
+        .header .nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        .header .nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .header .nav a:hover {
+            background-color: #b92018;
+        }
+
+        /* Body styles */
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px 30px;
+            color: #ffffff;
+            background-color: #000000;
+        }
+
+        /* Team section with left alignment */
+        .team-section {
+            text-align: left;
+            max-width: 800px;
+            width: 100%;
+            margin-top: 50px;
+        }
+
+        .team-title {
+            font-size: 36px;
+            color: #ffffff;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .team-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .team-list li {
+            font-size: 24px;
+            color: #ffffff;
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .team-list li i {
+            color: #b92018;
+            margin-right: 10px;
+            font-size: 28px;
+            animation: heartbeat 1.5s infinite; /* Add heartbeat animation */
+        }
+
+        .team-list li span {
+            text-decoration: underline;
+            color: #b92018;
+        }
+
+        .team-list li p {
+            font-size: 18px;
+            color: #ffffff;
+            margin-top: 5px;
+        }
+
+        /* Hover effect */
+        .team-list li span:hover {
+            color: #ff0000; /* Turns red on hover */
+            cursor: pointer; /* Changes cursor to pointer on hover */
+        }
+
+        /* Heartbeat animation */
+        @keyframes heartbeat {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header section -->
+    <header class="header">
+        <div class="logo">
+            <span class="robust">Robust</span> 
+            <span class="sports-clinic"> Sports Clinic</span>
+        </div>
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="teams.html">Team</a>
+            <a href="https://wa.me/+918595009367" target="_blank">Contact Us</a>
+        </nav>
+    </header>
+
+    <!-- Body section -->
+    <section class="content">
+        <h2 class="team-title">Meet Our Experts</h2>
+        <ul class="team-list">
+            <!-- Sports Physiotherapist -->
+            <li>
+                <i class="fas fa-user-md"></i>
+                <span>Sports Physiotherapist</span>
+            </li>
+            <p>Virtual and on-site access to your dedicated physiotherapist, so rehab success is guaranteed.</p>
+            
+            <!-- Strength & Conditioning Coach -->
+            <li>
+                <i class="fas fa-dumbbell"></i>
+                <span>Strength & Conditioning Coach</span>
+            </li>
+            <p>Our team of Strength & Conditioning coaches are responsible for improving athletic performance, reducing sports injuries, and teaching life-long fitness and movement skills.</p>
+
+            <!-- Fitness Expert -->
+            <li>
+                <i class="fas fa-heartbeat"></i>
+                <span>Fitness Expert</span>
+            </li>
+            <p>Our internationally certified fitness experts work with people of all ages and skill levels to ensure that the clients follow their programs safely and effectively.</p>
+        </ul>
+    </section>
+
+</body>
+</html>
